@@ -3,14 +3,14 @@
 @media only screen and (max-width: 768px) {
     ._1gdvh9t1 { /* chatbot text field*/
         padding: 0;
-        border-radius: 25px;
+        border-radius: 32px; /* Increased radius to match desktop */
         background-color: #ffffff;
         border: 1px solid #e0e0e0;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
         display: flex;
         align-items: center;
-        height: 45px;
-        width: 90%;
+        height: 48px; /* Adjusted to match desktop */
+        width: 94%; /* Increased width to match desktop proportion */
         margin: 15px auto;
         position: relative;
     }
@@ -22,7 +22,7 @@
         border: none;
         background: transparent;
         outline: none;
-        padding: 8px 15px;
+        padding: 12px 18px; /* Increased padding to match desktop */
         font-size: 16px;
         font-family: Arial, sans-serif;
         color: #333;
@@ -38,7 +38,7 @@
     ._1gdvh9t1 .icon-container {
         display: flex;
         position: absolute;
-        right: 10px;
+        right: 15px; /* Adjusted to match desktop */
     }
     
     /* Individual icon styling */
@@ -46,8 +46,21 @@
     ._1gdvh9t1 .send-icon {
         width: 24px;
         height: 24px;
-        margin-left: 8px;
+        margin-left: 10px; /* Slightly increased */
         color: #777;
+    }
+    
+    /* Bottom input container */
+    .cw6ztb1 {
+        margin-bottom: 12px; /* Add space at bottom to match desktop */
+    }
+    
+    /* Message input - direct styling */
+    [placeholder="Nachricht..."] {
+        border-radius: 32px !important;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1) !important;
+        height: 48px !important;
+        padding: 12px 18px !important;
     }
     
     ._1gdvh9t6 {
@@ -111,7 +124,6 @@
         font-size: 16px;
     }
 }
-
 /* Media query for phone screens (max-width: 480px) */
 /*  ----- end----------*/
 @media (max-width: 580px) {
@@ -138,7 +150,6 @@
         font-weight: bold !important;
     }
 }
-
 /*#############form for bigger screens #########*/
 .cleaning-form-container {
     font-family: Arial, sans-serif;
@@ -210,14 +221,23 @@ input, textarea, #houseType {
 #termins {
     color: Gray;
 }
-
 /*####################Chat bot code ####/*
 .g931q12 {                        /*Logo inside frame*/
     height: 50px !important; 
     width: 50px !important;
 }
-
 @media only screen and (max-width: 768px) {
+    /* Input field direct targeting - ensure these are applied regardless of other styles */
+    ._1gdvh9t1,
+    .cw6ztb1 input,
+    [placeholder="Nachricht..."] {
+        border-radius: 32px !important;
+        height: 48px !important;
+        border: 1px solid #e8e8e8 !important;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1) !important;
+        padding: 12px 18px !important;
+    }
+
     /* Adjusting widths for specific elements */
     ._1f1qam0 ._1ytjivy3 {
         width: 90%;
@@ -276,7 +296,6 @@ input, textarea, #houseType {
         font-size: 11px !important;
     }
 }
-
 @media screen and (min-width: 1024px) {
     ._1wkq7nf1 ._1wkq7nf3 {
         width: 600px !important;
